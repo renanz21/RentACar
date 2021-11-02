@@ -15,26 +15,28 @@ import java.util.List;
  * @author Z
  */
 public class BookingSystem implements BookingSystemInterface{
-
-    List cars = new ArrayList<>();
     
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
+         
         
+        System.out.println("Test");
+        //ArrayList<String> cars = new ArrayList<String>();
+        RentACarInterface car;
         String contentLine = in.readLine();
         String[] data = null;
-        RentACar c;
+        List<CarInterface> cars;
         
         while (contentLine != null){
+            
             contentLine.split(":");
-            c = new RentACar(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]));
-            cars.add(c);
+            car = new RentACar(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]));
             contentLine = in.readLine();
         }
         
         in.close();
         
-    return (RentACarInterface) cars;
+    return car;
     }
     
 }

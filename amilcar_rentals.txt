@@ -1,4 +1,3 @@
-amilcar_rentals
 BMW:250:3
 TOYOTA:200:8
 FORD:150:10

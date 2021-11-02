@@ -17,9 +17,11 @@ import java.io.FileReader;
 import java.io.IOException;
 
 // INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
+//Git repository link: https://github.com/renanz21/RentACar
 
-
-// INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
+// INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS
+//Name: Renan Gomes
+//Student ID: 2020295
 // AS A COMMENT!!!!
 
 
@@ -30,7 +32,6 @@ import java.io.IOException;
  */
 public class Driver {
 
-    //test
     /**
      * Do not change the signature of the main method!
      * 

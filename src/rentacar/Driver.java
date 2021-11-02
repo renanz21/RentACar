@@ -29,8 +29,6 @@ import java.io.IOException;
  * @author apont
  */
 public class Driver {
-    
-    //test
 
     /**
      * Do not change the signature of the main method!

@@ -20,23 +20,23 @@ public class BookingSystem implements BookingSystemInterface{
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
          
         
-        System.out.println("Test");
-        //ArrayList<String> cars = new ArrayList<String>();
-        RentACarInterface car;
+        RentACarInterface rentacar = new RentACar();
+        
         String contentLine = in.readLine();
-        String[] data = null;
-        List<CarInterface> cars;
+        String[] data;
         
         while (contentLine != null){
             
-            contentLine.split(":");
-            car = new RentACar(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]));
+            data = contentLine.split(":");
+            
+            RentACar car = new RentACar(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]));
+            car.setCars(car.getName());
             contentLine = in.readLine();
         }
         
         in.close();
         
-    return car;
+    return rentacar;
     }
     
 }

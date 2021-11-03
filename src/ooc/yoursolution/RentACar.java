@@ -20,6 +20,7 @@ public class RentACar implements RentACarInterface{
     private int d_rate;
     private int quantity;
     
+    ArrayList<RentACar> cars;
     
     public RentACar (String name, int d_rate, int quantity){
         
@@ -27,8 +28,14 @@ public class RentACar implements RentACarInterface{
         this.d_rate = d_rate;
         this.quantity = quantity;
         
+        
     }
     
+    public RentACar (){
+        
+        cars = new ArrayList<>();
+        
+    }
   
 //    public int getD_rate() {
 //        return d_rate;
@@ -46,7 +53,7 @@ public class RentACar implements RentACarInterface{
 
     @Override
     public void setCars(List<CarInterface> cars) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Test 2");
     }
 
     @Override
